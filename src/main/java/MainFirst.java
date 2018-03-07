@@ -10,6 +10,8 @@ public class MainFirst {
        evenNumbersWhile();
        evenNumbersFor();
         evenNumbersDoWhile ();
+        System.out.println("hh");
+
     }
 
     private static void max(int a, int b, int c, int d) {
