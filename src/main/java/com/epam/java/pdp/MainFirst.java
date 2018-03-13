@@ -1,3 +1,5 @@
+package com.epam.java.pdp;
+
 public class MainFirst {
 
     public static void main(String[] args) {
