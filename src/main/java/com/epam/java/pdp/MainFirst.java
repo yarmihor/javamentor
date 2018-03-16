@@ -1,5 +1,10 @@
 package com.epam.java.pdp;
 
+import oca.SecondLesson;
+
+import java.util.Arrays;
+import java.util.List;
+
 public class MainFirst {
 
     public static void main(String[] args) {
@@ -13,6 +18,14 @@ public class MainFirst {
        evenNumbersFor();
         evenNumbersDoWhile ();
         System.out.println("hh");
+
+        String[] toppings = {"Cheese", "Pepperoni", "Black Olives"};
+        List<String> messages = Arrays.asList("Hello", "World!", "How", "Are", "You");
+
+        String minString = SecondLesson.getMinString(toppings);
+        System.out.format("min string: '%s'\n", minString);
+        String minString2 = SecondLesson.getMinString2(messages);
+        System.out.format("min string: '%s'\n", minString2);
 
     }
 
