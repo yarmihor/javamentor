@@ -31,6 +31,10 @@ public class MainFirst {
                 String minWord3 = findMin.findMinStringWordWithVarArg(words3);
                 System.out.format("min string from array with vararg: '%s'\n", minWord3);
                 break;
+            default:
+                System.out.println("Incorrect value. PL" +
+                        "Please choose appropriate from the list");
+                break;
         }
     }
 
