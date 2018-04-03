@@ -13,9 +13,9 @@ public class MainFirst {
         FindMinWord findMin= new FindMinWord();
         Scanner in = new Scanner(System.in);
         System.out.println("Please choose method: List - '1', Array - '2', Vararg - '3'");
-        String choose_method = in.next();
+        String chooseMethod = in.next();
 
-        switch (choose_method) {
+        switch (chooseMethod) {
             case "1":
                 final List<String> words = findMin.readDataFromConsoleToList();
                 String minWord = findMin.findMinStringWord(words);
@@ -32,7 +32,7 @@ public class MainFirst {
                 System.out.format("min string from array with vararg: '%s'\n", minWord3);
                 break;
             default:
-                System.out.println("Incorrect value. PL" +
+                System.out.println("Incorrect value. " +
                         "Please choose appropriate from the list");
                 break;
         }

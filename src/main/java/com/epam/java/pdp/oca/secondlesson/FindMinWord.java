@@ -10,27 +10,23 @@ public class FindMinWord {
 
         List<String> myList = new ArrayList<>();
         Scanner in = new Scanner(System.in);
-        int i = 0;
+        int i = 1;
         String word;
         System.out.println("Start add data , if you would like to finish. Please write " + "\"exit\"");
         do {
-            System.out.println("Please insert " + ++i + " word.");
+            System.out.println("Please insert " + i + " word.");
             word = in.next();
-
-            if ((word.equalsIgnoreCase("exit")) && (i == 1)) {
-
-                System.out.println("Please input at least one element");
-                i--;
-            } else {
-                if ((word.equalsIgnoreCase("exit")) && (i != 0)) {
-
-                    System.out.println("Adding words 3completed");
+            if (word.equalsIgnoreCase("exit")) {
+                if (myList.isEmpty()) {
+                    System.out.println("Please input at least one element");
                 } else {
-                    myList.add(word);
+                    System.out.println("Adding words completed");
                 }
+                continue;
             }
-        } while (!word.equalsIgnoreCase("exit") || myList.size() == 0);
-
+            myList.add(word);
+            i++;
+        } while (!word.equalsIgnoreCase("exit") || myList.isEmpty());
         return myList;
     }
 
