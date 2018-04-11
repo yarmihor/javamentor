@@ -27,6 +27,7 @@ public class FindMinWord {
             myList.add(word);
             i++;
         } while (!word.equalsIgnoreCase("exit") || myList.isEmpty());
+//        System.out.println("Adding words completed");
         return myList;
     }
 
