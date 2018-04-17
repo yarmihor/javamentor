@@ -5,7 +5,9 @@ import com.epam.java.pdp.oca.thirdlesson.FilterStringValues;
 import com.epam.java.pdp.oca.thirdlesson.RemoveDuplicates;
 import com.epam.java.pdp.oca.thirdlesson.ReplaceString;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class MainFirst {
@@ -43,13 +45,18 @@ public class MainFirst {
                 final List<String> filterValue = findMin.readDataFromConsoleToList();
                 List<String> filterWords = filtering.filterValues(words4,filterValue);
                 String filteredList = findMin.findMinStringWord(filterWords);
+                System.out.println("Filtered words " + filterWords);
                 System.out.format("min string from list: '%s'\n", filteredList);
                 break;
             case "5":
-                System.out.println("Please choose word from the list: Hi,Hello,Greeting,Bye,Good Luck,Regards");
-                String world = in.next();
+                System.out.println("Create list of keys and values");
                 ReplaceString replace = new ReplaceString();
-                world = replace.ReplaceStringWorld(world);
+                Map<String,String> data= replace.readDataFromConsoleToList();
+                                System.out.println(data);
+
+                System.out.println("Please choose word from the list:" +data.keySet() );
+                String world = in.next();
+                world =data.get(world);
                 System.out.println(world);
                 break;
             default:
