@@ -1,6 +1,5 @@
 package com.epam.java.pdp.oca.thirdlesson;
 
-import java.util.Collection;
 import java.util.List;
 
 public class FilterStringValues {

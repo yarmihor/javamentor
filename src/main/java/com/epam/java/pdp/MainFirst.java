@@ -3,11 +3,8 @@ package com.epam.java.pdp;
 import com.epam.java.pdp.oca.secondlesson.FindMinWord;
 import com.epam.java.pdp.oca.thirdlesson.FilterStringValues;
 import com.epam.java.pdp.oca.thirdlesson.RemoveDuplicates;
-import com.epam.java.pdp.oca.thirdlesson.ReplaceString;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 public class MainFirst {
@@ -48,17 +45,17 @@ public class MainFirst {
                 System.out.println("Filtered words " + filterWords);
                 System.out.format("min string from list: '%s'\n", filteredList);
                 break;
-            case "5":
-                System.out.println("Create list of keys and values");
-                ReplaceString replace = new ReplaceString();
-                Map<String,String> data= replace.readDataFromConsoleToList();
-                                System.out.println(data);
-
-                System.out.println("Please choose word from the list:" +data.keySet() );
-                String world = in.next();
-                world =data.get(world);
-                System.out.println(world);
-                break;
+//            case "5":
+//                System.out.println("Create list of keys and values");
+//                TransformUtility replace = new TransformUtility();
+//                Map<String,String> data= replace.readDataFromConsoleToList();
+//                                System.out.println(data);
+//
+//                System.out.println("Please choose word from the list:" +data.keySet() );
+//                String world = in.next();
+//                world =data.get(world);
+//                System.out.println(world);
+//                break;
             default:
                 System.out.println("Incorrect value. " +
                         "Please choose appropriate from the list");
